@@ -23,8 +23,8 @@ def get_sunrise_and_sunset(icaocode='SBMT', date=today):
     r_post = requests.post(url, data=data)
     soup = BeautifulSoup(r_post.content, 'html.parser')
     tds = soup.find_all('tr')[1:2][0].find_all('td')
-    sunrise, sunset = (td.text for td in tds if td.text.endswith('UTC'))
-    return sunrise, sunset
+    sr, st = (td.text for td in tds if td.text.endswith('UTC'))
+    return sr, st
 
 
 sunrise, sunset = get_sunrise_and_sunset()
