@@ -28,7 +28,7 @@ Instale o Beautifulsoup4 4
 **Execute o arquivo `consulta.py`:**
 - Digite o código ICAO de um aeródromo:
 ```
-'SBJD'
+SBJD
 ```
 Será impresso:
 - As cartas disponíveis.
