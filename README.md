@@ -19,7 +19,7 @@ Entre no diretório
 
     cd consulta-aisweb
     
-Instale o Beautifulsoup4 4
+Instale o Beautifulsoup 4
 
     pip install beautifulsoup4
     
